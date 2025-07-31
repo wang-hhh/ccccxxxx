@@ -1,0 +1,383 @@
+body{
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+.liStyle{
+	font-weight: bold;
+}
+
+.mai-icon{
+    background: #38f;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+}
+/*导航*/
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e6e6e6;
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.navbar-default {
+    background-color: #fff;
+    height: 9.375rem;
+    /* box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25); */
+}
+
+.navbar-default .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #38f;
+    height: 70px;
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    padding: 0;
+}
+
+.navbar-default .navbar-nav {
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中 */
+    height: 100%; /* 确保nav占满高度 */
+}
+
+.navbar-default .navbar-nav>li {
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中 */
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    color: #444;
+    height: 70px;
+    display: flex; /* 添加flex布局 */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    padding: 0 15px; /* 添加一些水平间距 */
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #38f;
+}
+
+.navbar-toggle {
+    margin-top: 17px;
+    align-self: center; /* 垂直居中 */
+}
+
+.container_h1 {
+  position: absolute;
+  top: 39%;  /* 从顶部 50% 开始 */
+  left: 50%; /* 从左侧 50% 开始 */
+  
+  
+  transform: translate(-50%, -50%); /* 自身宽高的一半偏移 */
+  margin: 0;
+}
+.container_h2 {
+  position: absolute;
+  top: 50%;  /* 从顶部 50% 开始 */
+  left: 50%; /* 从左侧 50% 开始 */
+  transform: translate(-50%, -50%); /* 自身宽高的一半偏移 */
+  margin: 0;
+}
+
+.container2{
+	width: 100%;
+	height:auto;
+	background: #00afaa;
+}
+
+
+
+.banner {
+    text-align: center;
+	
+    color: #fff;
+    background: url(../images/zzzzz.png);
+    /* background-image: url('banner.jpg'); */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: local;
+    /* 确保容器有足够高度 */
+    min-height:930px; 
+    /* 文字可读性优化 */
+    position: relative;
+    color: white; /* 根据图片调整文字颜色 */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+/*    background-size: auto; /* 关键修改：使用原始尺寸 */
+    /* background-repeat: no-repeat; /* 防止重复平铺 */ 
+    /* background-position: center; /* 居中显示（可选） */ 
+	
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.lvjing{
+    width: 100%;
+    height: 100%;
+    background: rgba(177, 179, 182, 1.0);
+    padding: 80px 0;
+}
+
+
+.company-container {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between text and image */
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.company-description {
+  flex: 1;
+  color: #212121;
+  font-size: 20.25px;
+  text-align: left; /* Left-aligned text */
+  padding: 10px;
+}
+
+.company-description p {
+  margin: 0 0 5px 0;
+  padding: 0;
+  text-indent: 2em; /* First-line indent */
+  line-height: 1.5; /* Better readability */
+}
+
+.company-description p:last-child {
+  margin-bottom: 0;
+}
+
+.company-image {
+  flex: 0 0 40%; /* Image takes 40% width */
+  text-align: right; /* Align image to right */
+}
+
+.company-image img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: local;
+		/* 确保容器有足够高度 */
+		min-height:250px; 
+		min-width:366px; 
+	    margin: 0 auto;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .company-container {
+    flex-direction: column;
+  }
+  
+  .company-image {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+
+
+#bbs {
+  padding: 68px 0; /* 简写形式，上下68px，左右0 */
+  margin-top: 0;
+  text-align: center;
+}
+
+#bbs .heading-container {
+  display: inline-flex; /* 使用inline-flex保持容器居中 */
+  flex-wrap: nowrap; /* 防止换行 */
+  align-items: baseline; /* 基线对齐 */
+  justify-content: center; /* 水平居中 */
+  margin-bottom: 20px; /* 统一设置下边距 */
+}
+
+#bbs .container2_h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.7);
+  margin: 0 0.25em 0 0; /* 右边添加0.25em间距 */
+  white-space: nowrap; /* 防止文本换行 */
+  
+}
+
+#bbs .container2_h1 + h1 {
+  font-size: 3rem; /* 保持相同字号 */
+  font-weight: 900; /* 保持相同字重 */
+  text-decoration: underline;
+  margin: 0; /* 移除所有边距 */
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.7);
+}
+
+#bbs .container2_h2 {
+  font-size: 1.9rem;
+  text-shadow: 0.1px 0px 0px rgba(0,0,0,0.7);
+  margin-top: 0;
+  max-width: 800px; /* 可选：限制段落宽度 */
+  margin-left: auto;
+  margin-right: auto; /* 居中段落 */
+}
+
+
+
+/*HTML5 + bootstrap*/
+#html5{
+    background: #ffffff;
+}
+#html5 , #bootstrap{
+    padding: 10px 0;
+}
+#html5 h2 , #bootstrap h2{
+    font-weight: bold;
+}
+#html5 p  , #bootstrap p{
+    line-height: 25px;
+}
+
+
+
+/*course*/
+#course{
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+#course h2{
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+#course .col-md-3{
+    margin-bottom: 20px;
+}
+.course {
+    background: #ffffff;
+    border: 1px solid #eee;
+}
+#course .btn{
+    background: transparent;
+    border: 1px solid #38f;
+    border-radius: 0px;
+    color: #38f;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 8px 40px;
+    transition: all 0.3s;
+}
+#course .btn:hover{
+    background: #38f;
+    color: #fff;
+}
+.course .case-img{width:100%;height:auto;}
+
+/*app*/
+#app{
+    padding: 80px 0;
+}
+#app h2{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+#app .btn{
+    margin: 10px 0;
+    background: rgb(64, 210, 177);
+    border-color: rgb(64, 210, 177);
+    border-radius: 0;
+    padding: 6px 30px;
+    transition: all 0.3s;
+}
+#app .btn:hover{
+    background: rgb(44, 142, 120);
+}
+
+/*contact*/
+#contact{
+    /* background: url("../images/contact-bg.jpg") no-repeat; */
+    background-size: cover;
+    color: #ffffff;
+}
+#contact h2{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+#contact p{
+    line-height:24px;
+    margin-bottom:2px;
+}
+#contact .form-control {
+    border: none;
+    border-radius: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#contact textarea.form-control{
+    height: auto;
+}
+#contact input[type="submit"]{
+    background: #40D2B1;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+#contact input[type="submit"]:hover{
+    background: rgb(44, 142, 120);
+}
+
+/*footer*/
+footer{
+    font-weight: 400;
+    text-align: center;
+    padding:20px;
+    color:#999;
+}
+
+/* 主容器样式 */
+#bbs2.container3 {
+  background-color: #0f2d52; /* 深蓝色背景 */
+  color: white; /* 白色文字 */
+  padding: 40px 0; /* 上下内边距 */
+  text-align: center; /* 文字居中 */
+  font-family: 'Arial', sans-serif; /* 简洁的无衬线字体 */
+}
+
+/* 内容容器，限制最大宽度并居中 */
+#bbs2 .container {
+  max-width: 1200px; /* 适当的内容宽度 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 0 20px; /* 左右内边距 */
+}
+
+/* 标题容器 */
+#bbs2 .heading-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 子元素居中 */
+}
+
+/* 主标题样式 */
+#bbs2 .container3_h1 {
+  font-size: 3.5rem; /* 大字号 */
+  font-weight: 600; /* 中等字重 */
+  margin-bottom: 20px; /* 标题与段落的间距 */
+  line-height: 1.2;
+}
+
+/* 段落文本样式 */
+#bbs2 .container3_h3 {
+  font-size: 2.25rem; /* 适中阅读大小 */
+  line-height: 1.6; /* 良好的可读性行高 */
+  max-width: 800px; /* 优化阅读宽度 */
+  margin: 0 auto; /* 水平居中 */
+  opacity: 0.9; /* 轻微透明效果 */
+}
