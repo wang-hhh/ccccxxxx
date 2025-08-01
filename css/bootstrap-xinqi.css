@@ -1,3 +1,16 @@
+/* 全局基础样式 */
+:root {
+  --primary-color: #0f2d52;
+  --secondary-color: #00afaa;
+  --accent-color: #38f;
+  --text-color: #333;
+  --light-text: #fff;
+  --dark-text: #212121;
+  --bg-light: #fff;
+  --bg-dark: #0f2d52;
+  --font-main: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  --font-heading: 'Montserrat', 'Microsoft YaHei', sans-serif;
+}
 body{
     font-family: 'Microsoft YaHei', sans-serif;
 }
@@ -307,17 +320,82 @@ body{
 
 
 /*HTML5 + bootstrap*/
-#html5{
-    background: #ffffff;
+#html5 {
+  background: #ffffff;
+  padding: 10px 0;
 }
-#html5 , #bootstrap{
-    padding: 10px 0;
+
+.company-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
-#html5 h2 , #bootstrap h2{
-    font-weight: bold;
+
+.company-description {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
 }
-#html5 p  , #bootstrap p{
-    line-height: 25px;
+
+.company-image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.company-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Center heading on all devices */
+#html5 h1 {
+  text-align: center !important;
+  font-size: 2.5em !important;
+  font-weight: bold !important;
+  margin: 0.5em 0 1em !important;
+  width: 100%;
+}
+
+/* Paragraph styling */
+#html5 p {
+  line-height: 1.6;
+  margin-bottom: 1.2em;
+  font-size: 1.1em;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .company-container {
+    flex-direction: column;
+  }
+  
+  .company-description, 
+  .company-image {
+    width: 100%;
+    min-width: auto;
+    padding: 15px;
+  }
+  
+  .company-image {
+    order: 2; /* Move image after text */
+    margin-top: 20px;
+  }
+  
+  #html5 h1 {
+    font-size: 2em !important;
+  }
+  
+  #html5 p {
+    font-size: 1em;
+  }
 }
 
 
@@ -410,15 +488,31 @@ body{
 }
 
 /*footer*/
-footer{
-    font-weight: 400;
-    text-align: center;
-    padding:20px;
-    color:#999;
+/* 页脚 */
+footer {
+  background: #f8f9fa;
+  padding: 30px 0;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #666;
+  margin: 0 15px;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
 }
 
 /* Base styles for all devices */
-#bbs3 {
+#bbs3 {  font-family: 'Arial', sans-serif; /* 简洁的无衬线字体 */
+
   background-color: #0f2d52; /* Blue background */
   color: white;
   padding: 4rem 2rem;
@@ -426,14 +520,15 @@ footer{
 }
 
 #bbs3 .bbs3Content {
-  max-width: 1200px;
+	/* min-height: 31.25rem; */
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
 #bbs3 h1 {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 600;
   margin-bottom: 2rem;
   line-height: 1.2;
 }
@@ -516,3 +611,12 @@ footer{
   margin: 0 auto; /* 水平居中 */
   opacity: 0.9; /* 轻微透明效果 */
 }
+
+
+
+/* 动画效果 */
+/* .wow {
+  visibility: hidden;
+} */
+
+
